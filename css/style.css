@@ -1,0 +1,149 @@
+    body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+    color: #3a3a3a;
+    }
+    form{
+        margin: 0 auto;
+        max-width: 100%;
+    }
+    input[type="text"],
+    input[type="tel"],
+    input[type="email"],
+    input[type="submit"],
+    select{
+        width:100%;
+        margin-bottom:10px;
+        border-radius: 5px;
+        border:none;
+    }
+    input[type="text"],
+    input[type="tel"],
+    input[type="email"],
+    select{
+        height:35px;
+        background-color: lightgray;
+    }
+
+    input[type="submit"] {
+        height: 50px;
+        background-color: #00d4c0;
+        color: white;
+        font-size:20px;
+    }
+
+    input::placeholder{
+        text-align: right;
+        font-size:12px;
+    }
+
+    #hr1{
+        border-bottom: 4px solid black;
+        box-shadow: 0px 3px 0px 0px white, 0px 4px 0px 0px black;
+    }
+
+    #hr2{
+        border-bottom: 2px solid black;
+    }
+
+    fieldset{
+        border: none;
+    }
+
+    .main-header {
+		display:flex;
+        flex-direction: column;
+        align-items: center;
+        flex-wrap: wrap;
+        text-align: center;
+        margin-bottom:10px;
+    }
+
+    .main-header h2{
+        text-transform: uppercase;
+        color: white;
+    }
+    
+    .main-heading{
+        width:100%;
+        background-color: #0f0f0f;
+    }
+    footer{
+        text-align: center;
+        color:#d3d3d3e7;
+        font-size:15px;
+    }
+    legend{
+        margin-top:10px;
+        margin-bottom:15px;
+        font-weight: bold;
+    }
+    textarea{
+        background-color: lightgray;
+        border: none;
+        border-radius: 5px;
+        margin-bottom:10px;
+        margin-top:5px;
+    }
+    .label{
+        margin-bottom: 10px;
+        margin-top:10px;
+    }
+
+    .col{
+        margin-bottom:5px;
+    }
+
+    input:checked + label {
+        font-weight: bold;
+        color: steelblue;
+      }
+
+    input:focus {
+        background-color: lightblue;
+        border:1px solid black;
+    }
+
+/* ================================= 
+  Media Queries
+==================================== */
+
+@media (min-width: 769px) {
+    .main-header{
+        display: flex;
+    }
+    .main-header {
+        flex-direction: column;
+        align-items: center;
+    }     
+    input[type="text"],
+    input[type="tel"],  
+    input[type="email"]
+    ,select{
+        width:60%;
+    }
+    input[type="submit"],
+    textarea{
+        width:100%;
+    }
+    form{
+        display:inline-block;
+        margin: 0 auto;
+        text-align:left;
+    }
+    .main-form{
+        display:block;
+        text-align:center;
+    }
+    input[type="text"],
+    input[type="tel"],
+    input[type="email"],select{
+        float:right;
+    }
+    .clear{
+        clear : right;
+    }
+
+}
