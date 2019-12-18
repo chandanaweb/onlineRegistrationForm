@@ -18,6 +18,8 @@
         margin-bottom:10px;
         border-radius: 5px;
         border:none;
+        transition:all 1s ease-out;
+        
     }
     input[type="text"],
     input[type="tel"],
@@ -50,6 +52,10 @@
 
     fieldset{
         border: none;
+    }
+
+    .news{
+        background-color:#8080803b;
     }
 
     .main-header {
@@ -98,7 +104,7 @@
         color: steelblue;
       }
 
-    input:focus {
+    input:hover {
         background-color: lightblue;
         border:1px solid black;
     }
